@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Cor de fundo suave e moderna */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.cadastro-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais profunda para dar destaque */
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 0.8s ease-in-out; /* Animação de entrada suave */
+}
+
+.cadastro-container h2 {
+    margin-bottom: 1.5rem;
+    color: #007bff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cadastro-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.cadastro-container input {
+    width: calc(100% - 20px);
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cadastro-container button {
+    background-color: #28a745; /* Verde para o botão de cadastrar */
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cadastro-container button:hover {
+    background-color: #218838; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilos da tabela de partidos cadastrados */
+.cadastro-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-container table th, .cadastro-container table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.cadastro-container table th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.cadastro-container table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.cadastro-container table tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Estilo do botão de ações na tabela */
+.cadastro-container .action-button {
+    background-color: #ffc107;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+}
+
+.cadastro-container .action-button:hover {
+    background-color: #e0a800;
+}
+
+/* Animação para container do cadastro */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

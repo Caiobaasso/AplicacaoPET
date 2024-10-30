@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloCadastro.css">
+    <title>Cadastro de Filhotes</title>
+</head>
+<body>
+    <div class="cadastro-container">
+        <h2>Cadastro de Filhotes</h2>
+        <form action="#" method="POST" id="formFilhote">
+            <input type="hidden" id="id">
+
+            <label for="especie">Especie:</label>
+            <input type="text" id="especie" name="especie" required>
+
+            <label for="raca">Raça:</label>
+            <input type="text" id="raca" name="raca" required>
+
+            <button type="submit">Cadastrar Filhote</button>
+        </form>
+
+        <div id="mensagem"></div> 
+
+        <h3>Filhotes Cadastrados</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Especie</th>
+                    <th>Raça</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="containerTabela">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/filhotes.js"></script>
+</body>
+</html>
